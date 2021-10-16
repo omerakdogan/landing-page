@@ -183,7 +183,7 @@ header .logo {
     color: #25282B;
     margin-bottom: 80px;
 }
-.heading::after {
+.logo::after, .heading::after {
     display: block;
     content: '';
     width: 80%;
@@ -368,7 +368,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 40px;
     text-decoration: none;
     cursor: pointer;
     color: #25282B;

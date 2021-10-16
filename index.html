@@ -1,96 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
 
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="logo">Omer Akdogan</div>
             <nav class="header-nav">
                 <ul class="navigation">
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul></nav>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <section class="hero">
             <div class="hero-profile-img">
                 <div class="hero-profile-img-wrapper">
-                    <img src="/img/omer-akdogan.png" alt="">
+                    <img src="img/omer-akdogan.png" alt="">
                 </div>
             </div>
             <div class="hero-profile-content">
-                <h4 class="hero-profile-position">UI/UX Designer</h4>
+                <h4 class="hero-profile-position">FWD29 Student</h4>
                 <h1 class="hero-profile-title">Welcome to My Website</h1>
                 <p class="hero-profile-desc">
-                    My name is Omer. I am currently a Web Development Student at BCIT. 
-                    I joined this program to further explore and increase my creative skills and 
-                    establish a strong foundation for the industry as whole. 
-                    I have a passion to learn web development and create enjoyable websites. If you would like to learn more about my projects, please keep rolling on. I hope you enjoy my projects.
+                    My name is Omer. I am currently a Front-End Web Development student at BCIT.
+                    I have a passion to learn web development & create enjoyable websites. If you would like to learn
+                    more about my projects, please keep rolling on. I hope you enjoy my projects.
                 </p>
             </div>
-        </section>  
+        </section>
         <section id="projects" class="projects">
             <h2 class="heading">Projects</h2>
-            <div class="projects-card">
+            <div class="projects-card projects-card-reverse">
                 <div class="projects-card-img">
-                    <img src="/img/project-1.jpg" alt="">
+                    <img src="img/efes.png" alt="">
                 </div>
                 <div class="projects-card-content">
-                    <h3 class="card-title">Test</h3>
-                    <p class="card-desc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                    <h3 class="card-title">Discover Izmir</h3>
+                    <p class="card-desc">Izmir is one of the most important & largest
+                        urban centre of Turkey, with natural beauties & an archaeological
+                        heritage dating back 8500 years.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+            <div class="projects-card">
+                <div class="projects-card-img">
+                    <img src="img/cartoon.png" alt="">
+                </div>
+                <div class="projects-card-content">
+                    <h3 class="card-title">Cartoon Cinema</h3>
+                    <p class="card-desc">From here, I will share cartoons that
+                        promise more happiness for you.</p>
                     <a href="#" class="card-btn">View Project</a>
                 </div>
             </div>
             <div class="projects-card projects-card-reverse">
                 <div class="projects-card-img">
-                    <img src="/img/project-2.png" alt="">
+                    <img src="img/dice-game.png" alt="">
                 </div>
                 <div class="projects-card-content">
-                    <h3 class="card-title">Test</h3>
-                    <p class="card-desc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                    <h3 class="card-title">Dice Game</h3>
+                    <p class="card-desc">I would like to add an aesthetic interpretation
+                        to the dice game you already know.</p>
                     <a href="#" class="card-btn">View Project</a>
                 </div>
-            </div>
+            </div>    
             <div class="projects-card">
                 <div class="projects-card-img">
-                    <img src="/img/project-3.png" alt="">
+                    <img src="img/ux.png" alt="">
                 </div>
                 <div class="projects-card-content">
-                    <h3 class="card-title">Test</h3>
-                    <p class="card-desc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                    <h3 class="card-title">UX Design</h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Maxime quas nemo provident esse,
+                        porro quasi incidunt mollitia, corrupti
+                        modi nam alias? </p>
                     <a href="#" class="card-btn">View Project</a>
                 </div>
             </div>
+            <div class="projects-card projects-card-reverse">
+                <div class="projects-card-img">
+                    <img src="img/wordpress.png" alt="">
+                </div>
+                <div class="projects-card-content">
+                    <h3 class="card-title">WordPress Site</h3>
+                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Maxime quas nemo provident esse,
+                        porro quasi incidunt mollitia, corrupti
+                        modi nam alias? </p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>         
         </section>
         <section id="contact" class="contact">
             <h2 class="heading">Contact</h2>
             <form action="">
                 <div class="contact-row">
-                    <label for="fname">First name:</label>
+                    <label for="fname"> Name & Surname</label>
                     <input type="text" id="fname" name="fname" value="">
                 </div>
                 <div class="contact-row">
-                    <label for="lname">Last name:</label>
+                    <label for="lname"> E-mail</label>
                     <input type="text" id="lname" name="lname" value="">
                 </div>
                 <div class="contact-row">
-                    <label for="fname">Message:</label>
+                    <label for="fname"> Message</label>
                     <textarea id="fmessage" name="fmessage" rows="4" cols="50">
                     </textarea>
                 </div>
                 <input type="submit" value="Submit">
-            </form> 
+            </form>
         </section>
     </div>
     <footer>
@@ -109,4 +143,5 @@
         </div>
     </footer>
 </body>
+
 </html>
