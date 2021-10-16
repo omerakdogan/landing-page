@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #F9FAFF;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 1200px;
+}
+header {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+header .logo {
+    width: max-content;
+    font-size: 24px;
+    line-height: 32px;
+    color: #25282B;
+    margin-bottom: 32px;
+}
+.header-nav .navigation {
+    width: max-content;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-nav .navigation li:not(:last-child) {
+    margin-right: 48px;
+}
+.header-nav .navigation a {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 32px;
+    color: #25282B;
+    transition: ease-in 400ms;
+}
+.header-nav .navigation a:hover {
+    color: #FDC435;
+}
+/**Section - Hero**/
+.hero {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-profile-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.hero .hero-profile-img-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #FDC435;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.hero .hero-profile-img-wrapper img {
+    position: absolute;
+    bottom: -50px;
+    left: 60%;
+    transform: translateX(-50%);
+}
+.hero .hero-profile-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-profile-content h4 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FDC435;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.hero .hero-profile-content h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 120%;
+    color: #25282B;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.hero .hero-profile-content p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+    color: #828282;
+    margin: 0;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .logo {
+        margin-bottom: 0;
+    }
+    .hero {
+        padding: 64px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero .hero-profile-img-wrapper {
+        width: 400px;
+        height: 400px;
+    }
+    .hero .hero-profile-img-wrapper img {
+        bottom: 0;
+    }
+    .hero .hero-profile-img {
+        width: 40%;
+        margin-bottom: 0;
+    }
+    .hero .hero-profile-content {
+        width: 60%;
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+    .hero .hero-profile-content h4 {
+        text-align: left;
+    }
+    .hero .hero-profile-content h1 {
+        text-align: left;
+    }
+    .hero .hero-profile-content p {
+        text-align: left;
+    }
+}
+/**Section - Projects**/
+
+.projects {
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    margin: auto;
+    width: max-content;
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #25282B;
+    margin-bottom: 80px;
+}
+.heading::after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: 4px;
+    background: #FDC435;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.projects .projects-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 6px 64px rgba(112, 144, 176, 0.1));
+    border-radius: 24px;
+    background: #FFFFFF;
+}
+.projects .projects-card-reverse {
+    display: flex;
+}
+.projects .projects-card:not(:last-child) {
+    margin-bottom: 48px;
+}
+.projects .projects-card-img {
+    min-width: 50%;
+    height: 250px;
+}
+.projects-card-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+}
+.projects .projects-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.projects .projects-card-reverse .projects-card-img img {
+    border-radius: 24px 24px 0 0;
+}
+
+.projects .card-title {
+    margin-bottom: 24px;
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+    color: #25282B;
+}
+
+.projects .card-desc {
+    margin-top: 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #828282;
+}
+
+.projects .card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 43px;
+    border: 1px solid #25282B;
+    border-radius: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #25282B;
+    text-decoration: none;
+    transition: ease-in 400ms;
+}
+.projects .card-btn:hover {
+    background: #FDC435;
+    border-color: #fff;
+    color: #fff;
+}
+@media only screen and (min-width: 768px) {
+    .projects .projects-card {
+        flex-direction: row ;
+    }
+    .projects .projects-card-reverse {
+        flex-direction: row-reverse;
+    }
+    .projects .projects-card-img {
+        height: 526px;
+    }
+    .projects .projects-card-img img {
+        height: 526px;
+        border-radius: 24px 0 0 24px;
+    }
+    .projects .projects-card-reverse .projects-card-img img {
+        border-radius: 0 24px 24px 0;
+    }
+    .projects .projects-card-content {
+        width: 50%;
+        padding: 0 80px;
+    }
+}
+/**Section - Contact**/
+.contact {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.contact input[type=text] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #E8ECF4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 2px 12px;
+}
+
+.contact label {
+    margin-bottom: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #25282B;
+}
+
+.contact textarea#fmessage {
+    width: 100%;
+    height: 190px;
+    border: 1px solid #E8ECF4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 2px 12px;
+}
+
+.contact .contact-row {
+    margin-bottom: 24px;
+}
+
+.contact input[type=submit] {
+    width: 100px;
+    height: 36px;
+    border: none;
+    border-radius: 32px;
+    background: #FDC435;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #25282B;
+    cursor: pointer;
+}
+
+footer {
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDC435;
+}
+.footer-link {
+    display: flex;
+}
+.footer-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #25282B;
+}
+
+.footer-link a:not(:last-child) {
+    margin-right: 16px;
+}
+@media only screen and (min-width: 768px) {
+    .contact input[type=text] {
+        width: 400px;
+    }
+    .contact form {
+        width: 400px;
+    }
+    .contact textarea#fmessage {
+        width: 400px;
+    }
+    
+}

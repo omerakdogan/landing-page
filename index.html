@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Omer Akdogan</div>
+            <nav class="header-nav">
+                <ul class="navigation">
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul></nav>
+        </header>
+        <section class="hero">
+            <div class="hero-profile-img">
+                <div class="hero-profile-img-wrapper">
+                    <img src="/img/omer-akdogan.png" alt="">
+                </div>
+            </div>
+            <div class="hero-profile-content">
+                <h4 class="hero-profile-position">UI/UX Designer</h4>
+                <h1 class="hero-profile-title">Welcome to My Website</h1>
+                <p class="hero-profile-desc">
+                    My name is Omer. I am currently a Web Development Student at BCIT. 
+                    I joined this program to further explore and increase my creative skills and 
+                    establish a strong foundation for the industry as whole. 
+                    I have a passion to learn web development and create enjoyable websites. If you would like to learn more about my projects, please keep rolling on. I hope you enjoy my projects.
+                </p>
+            </div>
+        </section>  
+        <section id="projects" class="projects">
+            <h2 class="heading">Projects</h2>
+            <div class="projects-card">
+                <div class="projects-card-img">
+                    <img src="/img/project-1.jpg" alt="">
+                </div>
+                <div class="projects-card-content">
+                    <h3 class="card-title">Test</h3>
+                    <p class="card-desc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+            <div class="projects-card projects-card-reverse">
+                <div class="projects-card-img">
+                    <img src="/img/project-2.png" alt="">
+                </div>
+                <div class="projects-card-content">
+                    <h3 class="card-title">Test</h3>
+                    <p class="card-desc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+            <div class="projects-card">
+                <div class="projects-card-img">
+                    <img src="/img/project-3.png" alt="">
+                </div>
+                <div class="projects-card-content">
+                    <h3 class="card-title">Test</h3>
+                    <p class="card-desc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="heading">Contact</h2>
+            <form action="">
+                <div class="contact-row">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" value="">
+                </div>
+                <div class="contact-row">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" value="">
+                </div>
+                <div class="contact-row">
+                    <label for="fname">Message:</label>
+                    <textarea id="fmessage" name="fmessage" rows="4" cols="50">
+                    </textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form> 
+        </section>
+    </div>
+    <footer>
+        <div class="footer-link">
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-github-square"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
