@@ -205,8 +205,9 @@ header {
 
 blockquote {
     margin: 0;
+    font-style: italic !important;
 }
-blockquote figcaption {
+figcaption {
     display: flex;
     justify-content: flex-end;
 }
